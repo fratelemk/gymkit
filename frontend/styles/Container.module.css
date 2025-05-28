@@ -1,0 +1,28 @@
+/* Basic styling for the container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Mobile-first approach */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+/* Small tablet screens */
+@media (max-width: 600px) {
+    .container {
+        padding: 0 10px;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 375px) {
+    .container {
+        padding: 0 5px;
+    }
+}

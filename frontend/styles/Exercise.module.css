@@ -1,0 +1,30 @@
+/* Basic container styling for the exercise component */
+.container {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+/* Styling for exercise name */
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Styling for the type (machine, cable, etc.) */
+.type {
+    font-style: italic;
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}

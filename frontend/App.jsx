@@ -1,6 +1,7 @@
 import {currentDate, parseExercise} from "./utils";
 import useWorkout from "./hooks/useWorkout";
 import './App.css'
+import styles from './styles/Container.module.css';
 import Exercise from "./components/Exercise";
 
 
@@ -11,14 +12,12 @@ export function App() {
     if (error) return <p>Error: {error.message}</p>
 
     return (
-        <div>
-
+        <div className={styles.container}>
             <h1>Workout for Today</h1>
-            <h3>{currentDate()}</h3>
-            <p>
+
+            <div>
                 <strong>Duration:</strong> {workout.duration} minutes
-            </p>
-            <h3>Exercises</h3>
+            </div>
             <ol>
                 {workout.exercises.map((exercise, index) => (
                     <li key={index}>{<Exercise {...parseExercise(exercise)} />}</li>
